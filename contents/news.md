@@ -1,2 +1,5 @@
-- **2025.05**: Started my PhD journey at City University of Hong Kong! 🚀
-- **2023.06**: Graduated from Beijing University of Posts and Telecommunications.
+- **2025.09**: Our work SEGALL: A Unified Active Learning Framework for Wireless Sensing Data Segmentation was accepted by ACM UBICOMP'25. 🚀
+- **2025.05**: Our work SeRadar: Embracing Secondary Reflections for Human Sensing with mmWave Radar was accepted by ACM MOBICOM'25. 🚀
+- **2024.09**: Our work AdaWiFi: Collaborative WiFi Sensing for Cross-Environment Adaptation was accepted by IEEE TMC'24. 🚀
+- **2023.09**: Started my PhD journey at City University of Hong Kong! 🎉
+- **2023.06**: Graduated from Beijing University of Posts and Telecommunications. 🎉

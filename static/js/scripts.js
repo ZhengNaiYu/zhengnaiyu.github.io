@@ -4,30 +4,6 @@ const section_names = ['home', 'news', 'awards', 'experience', 'publications'];
 
 
 window.addEventListener('DOMContentLoaded', event => {
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-
     // Yaml
     fetch(content_dir + config_file)
         .then(response => response.text())
@@ -47,8 +23,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Marked
     marked.use({ mangle: false, headerIds: false })
+    const cacheBust = '?v=' + Date.now();
     section_names.forEach((name, idx) => {
-        fetch(content_dir + name + '.md')
+        fetch(content_dir + name + '.md' + cacheBust)
             .then(response => response.text())
             .then(markdown => {
                 const html = marked.parse(markdown);

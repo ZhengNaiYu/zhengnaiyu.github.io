@@ -1,16 +1,17 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![ZhengNaiYu](https://img.shields.io/badge/ZhengNaiYu-github-blue?logo=github)](https://github.com/ZhengNaiYu)
 
-I am currently pursuing a Ph.D. in Computer Science at City University of Hong Kong, specializing in AIoT. My research focuses on harnessing wireless sensing technologies to enable smarter living environments, with applications in smart homes and elderly care.
+I am currently a Ph.D. candidate in Computer Science at City University of Hong Kong, specializing in AI Agents and AIoT. My research focuses on leveraging advanced AI models and LLM-based agent architectures for multimodal RF sensing to enable human perception in smart environments.
 
-Beyond academia, I have hands-on experience in software project development, equipping me with both theoretical expertise and practical skills in building innovative solutions. Additionally, I am deeply interested in the intersection of FinTech.
+My current work centers on two main directions. The first explores AI agents and their post-training techniques for vertical-domain applications, particularly multi-agent frameworks for financial trading systems. The second lies in quantitative finance, where I investigate reinforcement learning and deep learning for the development of CTA strategies.
 
-With a strong technical foundation and a passion for cutting-edge research, I am always eager to collaborate on interdisciplinary projects that bridge AIoT and real-world applications.
+During my Ph.D., I have completed long-term internships at both a hedge fund and an internet company, gaining in-depth experience in AI agent systems and reinforcement learning.
 
-Feel free to connect! 🚀
+I received my B.S. degree in Computer Science from Beijing University of Posts and Telecommunications. As an undergraduate, I interned at Microsoft Engineering Institute and the Institute for AI Industry Research (AIR) at Tsinghua University, under the supervision of Prof. Yuanchun Li and Prof. Yunxin Liu.
+
 
 #### Email  
-<code>naiyuzheng2001@gmail.com</code>  
-<code>naiyzheng2-c@my.cityu.edu.hk</code>
+naiyuzheng2001@gmail.com
+naiyzheng2-c@my.cityu.edu.hk
 
 #### Education  
 **City University of Hong Kong**, PhD of Computer Science (2023 – 2027)  

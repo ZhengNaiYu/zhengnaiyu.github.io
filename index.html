@@ -1,178 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="yixin0313" />
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
     <title id="title"></title>
+    <!-- FontAwesome from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/academicons.css">
+    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-    <!-- Markdown -->
     <script type="text/javascript" src="static/js/marked.min.js"></script>
-
+    
     <!-- Mathematics -->
     <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
         MathJax = {
             tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
             }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script"
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+  </head>
 
-</head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                </ul>
-            </div>
+  <body>
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <button><div class="navicon"></div></button>
+            <ul class="visible-links">
+              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" id="page-top-title"></a></li>
+              <li class="masthead__menu-item"><a href="#about-me">About Me</a></li>
+              <li class="masthead__menu-item"><a href="#news">News</a></li>
+              <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
+              <li class="masthead__menu-item"><a href="#experience">Experience</a></li>
+              <li class="masthead__menu-item"><a href="#awards">Honors and Awards</a></li>
+            </ul>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
         </div>
-    </nav>
-
-    <div class="container main-container">
-        <div class="row">
-            <!-- Sidebar (Profile) -->
-            <div class="col-lg-4 text-center text-lg-start mb-5">
-                <div class="profile-sticky pe-lg-4">
-                    <img class="img-fluid rounded shadow-sm mb-4 profile-img" src="static/assets/img/photo.png">
-                    <h1 id="home-subtitle" class="fw-bold h2 mb-1"></h1>
-                    <p id="home-role" class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.4;"></p>
-                    
-                    <div class="social-links d-flex justify-content-center justify-content-lg-start gap-4 fs-4 text-muted mb-4">
-                        <a href="mailto:naiyuzheng2001@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
-                        <a href="https://github.com/ZhengNaiYu" title="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="#" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
-                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    
-                    <div class="small text-muted d-none d-lg-block">
-                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Hong Kong</p>
-                    </div>
-                    <hr class="my-4 d-none d-lg-block">
-                </div>
-            </div>
-
-            <!-- Content Area -->
-            <div class="col-lg-8">
-                <!-- About Me -->
-                <section id="home" class="mb-5">
-                    <div class="main-body" id="home-md"></div>
-                </section>
-
-                <!-- News -->
-                <section id="news" class="mb-5 py-3">
-                    <h2 class="fw-bold mb-4">🔥 News</h2>
-                    <div class="main-body" id="news-md">
-                        <!-- Add a news.md file in contents/ to populate this -->
-                        <p class="text-muted small">No recent news.</p>
-                    </div>
-                </section>
-
-                <!-- Publications -->
-                <section id="publications" class="mb-5 py-3">
-                    <h2 class="fw-bold mb-4">Publications</h2>
-                    <div class="main-body" id="publications-md"></div>
-                </section>
-
-                <!-- Experience -->
-                <section id="experience" class="mb-5 py-3">
-                    <h2 class="fw-bold mb-4">Experience</h2>
-                    <div class="main-body" id="experience-md"></div>
-                </section>
-
-                <!-- Awards -->
-                <section id="awards" class="mb-5 py-3">
-                    <h2 class="fw-bold mb-4">Honors and Awards</h2>
-                    <div class="main-body" id="awards-md"></div>
-                </section>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!-- Footer-->
-    <footer class="text-center py-5 border-top">
-        <div class="container">
-            <div class="small text-muted">
-                <div id="copyright-text" class="mb-1"></div>
-                <div>
-                    Built with GitHub Pages &middot; 
-                    <a id="license-link" href="https://github.com/ZhengNaiYu/zhengnaiyu.github.io/blob/main/LICENSE">License</a>
-                </div>
+    <div id="main" role="main">
+      <div class="sidebar sticky">
+        <div itemscope itemtype="http://schema.org/Person" class="profile_box">
+          <div class="author__avatar">
+            <img src="static/assets/img/photo.png" class="author__avatar" alt="Profile">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name" id="home-subtitle"></h3>
+            <p class="author__bio" id="home-role"></p>
+          </div>
+          <div class="author__urls-wrapper">
+            <!-- <button class="btn btn--inverse">Follow</button> -->
+            <ul class="author__urls social-icons">
+              <li><div style="white-space: normal; margin-bottom: 1em;">The journey is the reward.</div></li>
+              <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Hong Kong</li>
+              <li><a href="mailto:naiyuzheng2001@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+              <li><a href="https://github.com/ZhengNaiYu"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+              <li><a href="#"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            </ul>
+            <div class="author__urls_sm">
+              <a href="mailto:naiyuzheng2001@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+              <a href="https://github.com/ZhengNaiYu"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="fas fa-fw fa-graduation-cap"></i></a>
+              <a href="#"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
 
-</body>
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            <div id="about-me"></div>
+            <div id="home-md"></div>
+            
+            <h1 id="news">🔥 News</h1>
+            <div id="news-md"></div>
+            
+            <h1 id="publications">📝 Publications</h1>
+            <div id="publications-md"></div>
 
+            <h1 id="experience">🎓 Experience</h1>
+            <div id="experience-md"></div>
+
+            <h1 id="awards">🎖 Honors and Awards</h1>
+            <div id="awards-md"></div>
+          </section>
+        </div>
+      </article>
+      
+    </div>
+
+    <!-- Footer -->
+    <div class="page__footer">
+      <footer>
+        <div class="page__footer-follow">
+          <ul class="social-icons"></ul>
+        </div>
+        <div class="page__footer-copyright" id="copyright-text"></div>
+      </footer>
+    </div>
+    <script src="static/js/main.min.js"></script>
+  </body>
 </html>

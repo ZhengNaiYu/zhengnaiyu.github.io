@@ -1,3 +1,3 @@
 - Research Tuition Scholarship, CityUHK, 2025.
-
-- SANER Student Grant, 2023.
+- Ubicomp Student Grant, ACM, 2025.
+- SANER Student Grant, ACM, 2023.
