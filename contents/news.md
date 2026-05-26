@@ -1,0 +1,2 @@
+- **2025.05**: Started my PhD journey at City University of Hong Kong! 🚀
+- **2023.06**: Graduated from Beijing University of Posts and Telecommunications.
